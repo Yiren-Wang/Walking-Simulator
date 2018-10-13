@@ -502,6 +502,54 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 112f5a17dd819f846b14d205696e5e13, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &15545441
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 15545443}
+  - component: {fileID: 15545442}
+  m_Layer: 0
+  m_Name: Glow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &15545442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 15545441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e268910e2eb596b41ba64dbe8b8c047c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  glowMasks:
+  - pGlowMaskComponent: {fileID: 15545442}
+    pMaterial: {fileID: 2100000, guid: 1c8bfd6485254fa428f91a5d546af8d7, type: 2}
+    pGlowTint: {r: 0.21960784, g: 0.5019608, b: 0.5568628, a: 1}
+    pTexture: {fileID: 2800000, guid: a43b2b99f0395374d9c0231bc00c16b9, type: 3}
+    pUseMainTextureTilingOffset: 1
+    pTiling: {x: 1, y: 1}
+    pOffset: {x: 1, y: 1}
+--- !u!4 &15545443
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 15545441}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -66.682076, y: -31.445728, z: 118.67357}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &15896510
 Prefab:
   m_ObjectHideFlags: 0
@@ -22689,6 +22737,36 @@ Prefab:
       propertyPath: m_Name
       value: Dust
       objectReference: {fileID: 0}
+    - target: {fileID: 198830706883890706, guid: a3d08e884456124469480bb5ede61e57,
+        type: 2}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198830706883890706, guid: a3d08e884456124469480bb5ede61e57,
+        type: 2}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.32549024
+      objectReference: {fileID: 0}
+    - target: {fileID: 198830706883890706, guid: a3d08e884456124469480bb5ede61e57,
+        type: 2}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.4108679
+      objectReference: {fileID: 0}
+    - target: {fileID: 198830706883890706, guid: a3d08e884456124469480bb5ede61e57,
+        type: 2}
+      propertyPath: InitialModule.startColor.minColor.g
+      value: 0.47062773
+      objectReference: {fileID: 0}
+    - target: {fileID: 198830706883890706, guid: a3d08e884456124469480bb5ede61e57,
+        type: 2}
+      propertyPath: InitialModule.startColor.minColor.b
+      value: 0.8962264
+      objectReference: {fileID: 0}
+    - target: {fileID: 198830706883890706, guid: a3d08e884456124469480bb5ede61e57,
+        type: 2}
+      propertyPath: InitialModule.startColor.minColor.r
+      value: 0.2325116
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3d08e884456124469480bb5ede61e57, type: 2}
   m_IsPrefabAsset: 0
@@ -26245,6 +26323,29 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100002, guid: 5e9e851c0e142814dac026a256ba2ac0,
     type: 2}
   m_PrefabInternal: {fileID: 564122870}
+--- !u!114 &1609663238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1609663236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 025c2da0796437c429b0b914a594be29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  glowLayers:
+    serializedVersion: 2
+    m_Bits: 2147483647
+  globalGlowTint: {r: 0.5529412, g: 0.70980394, b: 0.8980392, a: 1}
+  mainPower: -0.13
+  blurPower: 0.83
+  blurDownsample: 2
+  blurSize: 9.13
+  blurIterations: 3
+  maskDownsample: 0
+  debugMode: 0
+  checkRenderTypes: 1
 --- !u!114 &1609663241
 MonoBehaviour:
   m_ObjectHideFlags: 0
