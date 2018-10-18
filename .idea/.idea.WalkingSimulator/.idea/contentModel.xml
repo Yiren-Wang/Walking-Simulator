@@ -250,6 +250,10 @@
             <e p="FAE_WaterfallFoam.shader" t="Include" />
           </e>
         </e>
+        <e p="Scripts" t="Include">
+          <e p="PlayerInteraction.cs" t="Include" />
+          <e p="PlayerManagement.cs" t="Include" />
+        </e>
         <e p="Standard Assets" t="Include">
           <e p="Characters" t="Include">
             <e p="FirstPersonCharacter" t="Include">
