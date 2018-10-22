@@ -6,7 +6,7 @@ public class PlayerManagement : MonoBehaviour
 {
 	private float curMushroom;
 	public float MushroomNumGoal;
-	
+	//public GameObject curText;
 	// Use this for initialization
 	void Start ()
 	{

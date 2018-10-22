@@ -110,7 +110,7 @@ Material:
     - _Parallax: 0.02
     - _RealtimeShadow: 0
     - _RimEnable: 0
-    - _RimPower: 1
+    - _RimPower: 3.21
     - _Rotation_B: 0
     - _Rotation_D: 0
     - _Rotation_F: 0
@@ -126,14 +126,14 @@ Material:
     - _Shading_R: 2
     - _Shading_T: 0
     - _ShowAO: 1
-    - _ShowAmbientSettings: 1
+    - _ShowAmbientSettings: 0
     - _ShowBack: 1
     - _ShowBottom: 1
     - _ShowColorCorrection: 1
     - _ShowCustomShading: 1
     - _ShowFog: 1
     - _ShowFront: 1
-    - _ShowGlobalGradientSettings: 0
+    - _ShowGlobalGradientSettings: 1
     - _ShowLMap: 1
     - _ShowLeft: 1
     - _ShowRight: 1
@@ -177,6 +177,6 @@ Material:
     - _GradientYStartPos_L: {r: 0, g: 0, b: 0, a: 0}
     - _GradientYStartPos_R: {r: 0, g: 0, b: 0, a: 0}
     - _LMColor: {r: 1, g: 1, b: 1, a: 1}
-    - _RimColor: {r: 1, g: 1, b: 1, a: 1}
+    - _RimColor: {r: 0.3726415, g: 0.8509037, b: 1, a: 1}
     - _ShadowColor: {r: 0.1, g: 0.1, b: 0.1, a: 1}
     - _TintColor: {r: 0.3362718, g: 0.28132787, b: 0.5471698, a: 1}

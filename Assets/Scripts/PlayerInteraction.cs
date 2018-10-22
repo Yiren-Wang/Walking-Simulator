@@ -21,10 +21,19 @@ public class PlayerInteraction : MonoBehaviour
 			{
 				if (hitObject.collider.gameObject.tag.Equals("PickObj"))
 				{
+					Debug.Log("You are picking sth.");
 					Destroy(hitObject.collider.gameObject);
 					if (hitObject.collider.gameObject.name.Contains("Mushroom"))
 					{
 						playerManagement.AddMushroom();
+					}
+				}
+				if (hitObject.collider.gameObject.tag.Equals("NPC"))
+				{
+					Debug.Log("You are talking with NPC");
+					if (hitObject.collider.gameObject.name.Contains("OldWoman"))
+					{
+						hitObject.collider.gameObject.GetComponent<NPC_OldWoman>().OneSentenceAppear(0);
 					}
 				}
 			}
