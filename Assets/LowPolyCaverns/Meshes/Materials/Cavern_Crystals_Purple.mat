@@ -147,7 +147,7 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _AOColor: {r: 0.9811321, g: 0.5507298, b: 0.5507298, a: 1}
-    - _AmbientColor: {r: 0, g: 0, b: 0, a: 0}
+    - _AmbientColor: {r: 1, g: 1, b: 1, a: 0}
     - _Color: {r: 0.41037738, g: 1, b: 0.9642989, a: 1}
     - _Color1_B: {r: 0.5613208, g: 1, b: 0.9909431, a: 1}
     - _Color1_D: {r: 0.08235294, g: 0.2784314, b: 0.69803923, a: 1}
