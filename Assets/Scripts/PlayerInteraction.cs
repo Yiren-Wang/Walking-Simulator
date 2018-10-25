@@ -30,7 +30,9 @@ public class PlayerInteraction : MonoBehaviour
 				}
 				if (hitObject.collider.gameObject.tag.Equals("NPC"))
 				{
+					hitObject.collider.gameObject.GetComponent<DisplayUI>().IsTalking = true;
 					Debug.Log("You are talking with NPC");
+					
 					if (hitObject.collider.gameObject.name.Contains("OldWoman"))
 					{
 						hitObject.collider.gameObject.GetComponent<NPC_OldWoman>().OneSentenceAppear(0);
