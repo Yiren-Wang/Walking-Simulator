@@ -539,6 +539,7 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="BoatMoving.cs" t="Include" />
           <e p="DisplayUI.cs" t="Include" />
           <e p="GhostsCreater.cs" t="Include" />
           <e p="GhostWalking.cs" t="Include" />
