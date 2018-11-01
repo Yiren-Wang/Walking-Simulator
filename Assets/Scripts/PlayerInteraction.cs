@@ -7,6 +7,8 @@ public class PlayerInteraction : MonoBehaviour
 	public float RayDistance;
 	public PlayerManagement playerManagement;
 	private RaycastHit hitObject;
+
+	private GameObject UItext;
 	// Use this for initialization
 	void Start () {
 		
@@ -17,28 +19,45 @@ public class PlayerInteraction : MonoBehaviour
 		Debug.DrawRay(transform.position, transform.forward* RayDistance,Color.blue);
 		if (Physics.Raycast(transform.position, transform.forward, out hitObject, RayDistance))
 		{
-			if (Input.GetKeyDown(KeyCode.E))
+			if (hitObject.collider.gameObject.tag.Equals("PickObj"))
 			{
-				if (hitObject.collider.gameObject.tag.Equals("PickObj"))
+
+				UItext = hitObject.collider.gameObject.transform.Find("UIText").gameObject;
+				UItext.SetActive(true);
+				UItext.GetComponent<TextDissolve>().isStartAppear = true;
+				if (Input.GetKeyDown(KeyCode.E))
 				{
-					Debug.Log("You are picking sth.");
 					Destroy(hitObject.collider.gameObject);
 					if (hitObject.collider.gameObject.name.Contains("Mushroom"))
 					{
 						playerManagement.AddMushroom();
 					}
 				}
+			}
+			else
+			{
+				if (UItext != null)
+				{
+					UItext.GetComponent<TextDissolve>().isStartDisappear = true;
+				}
+				
+			}
+			
+				
 				if (hitObject.collider.gameObject.tag.Equals("NPC"))
 				{
-					hitObject.collider.gameObject.GetComponent<DisplayUI>().IsTalking = true;
-					Debug.Log("You are talking with NPC");
-					
-					if (hitObject.collider.gameObject.name.Contains("OldWoman"))
+					if (Input.GetKeyDown(KeyCode.E))
 					{
-						hitObject.collider.gameObject.GetComponent<NPC_OldWoman>().OneSentenceAppear(0);
+						hitObject.collider.gameObject.GetComponent<DisplayUI>().IsTalking = true;
+						Debug.Log("You are talking with NPC");
+
+						if (hitObject.collider.gameObject.name.Contains("OldWoman"))
+						{
+							hitObject.collider.gameObject.GetComponent<NPC_OldWoman>().OneSentenceAppear(0);
+						}
 					}
 				}
-			}
+			
 			
 		}
 	}

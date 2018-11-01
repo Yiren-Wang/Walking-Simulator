@@ -58,7 +58,7 @@ public class TextDissolve : MonoBehaviour
 			else
 			{
 				timeElapsed = 0;
-				isStartDisappear = false;
+				isStartDisappear = false;			
 			}
 		}
 

@@ -7,15 +7,23 @@ public class BoatMoving : MonoBehaviour {
 	public Transform target;
 	public PathType pathType = PathType.CatmullRom;
 	public Transform[] waypoints;
+	private Vector3[] points;
 
 
 	void Start()
 	{
-		Vector3[] points = new Vector3[waypoints.Length];
+		points = new Vector3[waypoints.Length];
 		for (int i = 0; i < waypoints.Length; i++)
 		{
 			points[i] = waypoints[i].position;
 		}
+		MoveBoat();
+
+		
+	}
+
+	public void MoveBoat()
+	{
 		// Create a path tween using the given pathType, Linear or CatmullRom (curved).
 		// Use SetOptions to close the path
 		// and SetLookAt to make the target orient to the path itself
@@ -27,7 +35,5 @@ public class BoatMoving : MonoBehaviour {
 			.SetLookAt(1f);
 		// Then set the ease to InOutQuad and use infinite loops
 		t.SetEase(Ease.InOutQuad);
-
-		
 	}
 }

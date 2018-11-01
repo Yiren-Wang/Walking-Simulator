@@ -98,7 +98,7 @@
             <e p="PolyAttributions.txt" t="Include" />
           </e>
           <e p="Sources" t="Include">
-            <e p="Paddle_Poly_by_Google_cJ_sUf4Dry" t="Include">
+            <e p="Primordial_Paddle_Zane_Brant_9tMIdEPX_4B" t="Include">
               <e p="FileNameMapping.txt" t="Include" />
             </e>
             <e p="Rowboat_Poly_by_Google_7GW6GfvuKkt" t="Include">
@@ -543,7 +543,9 @@
           <e p="DisplayUI.cs" t="Include" />
           <e p="GhostsCreater.cs" t="Include" />
           <e p="GhostWalking.cs" t="Include" />
+          <e p="LootAtCamera.cs" t="Include" />
           <e p="NPC_OldWoman.cs" t="Include" />
+          <e p="PaddlePosition.cs" t="Include" />
           <e p="PlayerInteraction.cs" t="Include" />
           <e p="PlayerManagement.cs" t="Include" />
           <e p="TextDissolve.cs" t="Include" />

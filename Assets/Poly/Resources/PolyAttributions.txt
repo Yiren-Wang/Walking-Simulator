@@ -1,8 +1,8 @@
 This project uses the following items from Poly (http://poly.google.com):
 
-Title: Paddle
-Author: Poly by Google
-URL: https://poly.google.com/view/cJ__sUf4Dry
+Title: Primordial Paddle
+Author: Zane Brant
+URL: https://poly.google.com/view/9tMIdEPX_4B
 License: Creative Commons CC-BY
 https://creativecommons.org/licenses/by/3.0/legalcode
 
