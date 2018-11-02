@@ -24,7 +24,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
         [SerializeField] private CurveControlledBob m_HeadBob = new CurveControlledBob();
         [SerializeField] private LerpControlledBob m_JumpBob = new LerpControlledBob();
         [SerializeField] private float m_StepInterval;
-        [SerializeField] private AudioClip[] m_FootstepSounds;    // an array of footstep sounds that will be randomly selected from.
+        [SerializeField] private AudioClip[] m_FootstepSoundsWood;    // an array of footstep sounds that will be randomly selected from.
+        [SerializeField] private AudioClip[] m_FootstepSoundsStone;    // an array of footstep sounds that will be randomly selected from.
+        [SerializeField] private AudioClip[] m_FootstepSoundsCarpet;    // an array of footstep sounds that will be randomly selected from.
         [SerializeField] private AudioClip m_JumpSound;           // the sound played when character leaves the ground.
         [SerializeField] private AudioClip m_LandSound;           // the sound played when character touches back on ground.
 
@@ -168,12 +170,35 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
             // pick & play a random footstep sound from the array,
             // excluding sound at index 0
-            int n = Random.Range(1, m_FootstepSounds.Length);
-            m_AudioSource.clip = m_FootstepSounds[n];
-            m_AudioSource.PlayOneShot(m_AudioSource.clip);
-            // move picked sound to index 0 so it's not picked next time
-            m_FootstepSounds[n] = m_FootstepSounds[0];
-            m_FootstepSounds[0] = m_AudioSource.clip;
+            if (OnStone == true)
+            {
+                int n = Random.Range(1, m_FootstepSoundsStone.Length);
+                m_AudioSource.clip = m_FootstepSoundsStone[n];
+                m_AudioSource.PlayOneShot(m_AudioSource.clip);
+                // move picked sound to index 0 so it's not picked next time
+                m_FootstepSoundsStone[n] = m_FootstepSoundsStone[0];
+                m_FootstepSoundsStone[0] = m_AudioSource.clip;
+            }
+
+            if (OnWood == true)
+            {
+                int n = Random.Range(1, m_FootstepSoundsWood.Length);
+                m_AudioSource.clip = m_FootstepSoundsWood[n];
+                m_AudioSource.PlayOneShot(m_AudioSource.clip);
+                // move picked sound to index 0 so it's not picked next time
+                m_FootstepSoundsWood[n] = m_FootstepSoundsWood[0];
+                m_FootstepSoundsWood[0] = m_AudioSource.clip;
+            }
+
+            if (OnCarpet == true)
+            {
+                int n = Random.Range(1, m_FootstepSoundsCarpet.Length);
+                m_AudioSource.clip = m_FootstepSoundsCarpet[n];
+                m_AudioSource.PlayOneShot(m_AudioSource.clip);
+                // move picked sound to index 0 so it's not picked next time
+                m_FootstepSoundsCarpet[n] = m_FootstepSoundsCarpet[0];
+                m_FootstepSoundsCarpet[0] = m_AudioSource.clip;
+            }
         }
 
 
@@ -239,9 +264,31 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_MouseLook.LookRotation (transform, m_Camera.transform);
         }
 
+        public bool OnWood;
+        public bool OnStone;
+        public bool OnCarpet;
 
         private void OnControllerColliderHit(ControllerColliderHit hit)
         {
+            if (hit.gameObject.tag == "StoneFloor")
+            {
+                OnStone = true;
+                OnCarpet = false;
+                OnWood = false;
+            }
+            if (hit.gameObject.tag == "WoodFloor")
+            {
+                OnWood = true;
+                OnCarpet = false;
+                OnStone = false;
+            }
+            if (hit.gameObject.tag == "Carpet")
+            {
+                OnCarpet = true;
+                OnWood = false;
+                OnStone = false;
+
+            }
             Rigidbody body = hit.collider.attachedRigidbody;
             //dont move the rigidbody if the character is on top of it
             if (m_CollisionFlags == CollisionFlags.Below)

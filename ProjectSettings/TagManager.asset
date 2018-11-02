@@ -6,6 +6,9 @@ TagManager:
   tags:
   - PickObj
   - NPC
+  - Carpet
+  - WoodFloor
+  - StoneFloor
   layers:
   - Default
   - TransparentFX

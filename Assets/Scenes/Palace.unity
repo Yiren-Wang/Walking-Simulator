@@ -433,6 +433,10 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 4300000, guid: bcae6e444239b9a4581653b40fa3ab66, type: 3}
+    - target: {fileID: 120358, guid: fc3b78f000bc6c147bc799bb3db8718f, type: 2}
+      propertyPath: m_TagString
+      value: StoneFloor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc3b78f000bc6c147bc799bb3db8718f, type: 2}
   m_IsPrefabAsset: 0
@@ -691,6 +695,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 42b64fdb315e3054ea757d8d1c4bcfa7, type: 2}
+    - target: {fileID: 120358, guid: fc3b78f000bc6c147bc799bb3db8718f, type: 2}
+      propertyPath: m_TagString
+      value: StoneFloor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc3b78f000bc6c147bc799bb3db8718f, type: 2}
   m_IsPrefabAsset: 0
@@ -825,6 +833,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.8428273
       objectReference: {fileID: 0}
+    - target: {fileID: 130914, guid: a225c8868cceaed4991f70eff5385790, type: 2}
+      propertyPath: m_TagString
+      value: Carpet
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a225c8868cceaed4991f70eff5385790, type: 2}
   m_IsPrefabAsset: 0
@@ -875,6 +887,10 @@ Prefab:
     - target: {fileID: 152604, guid: d3b7674afb9052743a95ff497d5d30b8, type: 2}
       propertyPath: m_Name
       value: SM_Env_Floor_Half_06
+      objectReference: {fileID: 0}
+    - target: {fileID: 152604, guid: d3b7674afb9052743a95ff497d5d30b8, type: 2}
+      propertyPath: m_TagString
+      value: WoodFloor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3b7674afb9052743a95ff497d5d30b8, type: 2}
@@ -1277,6 +1293,10 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 4300000, guid: bcae6e444239b9a4581653b40fa3ab66, type: 3}
+    - target: {fileID: 120358, guid: fc3b78f000bc6c147bc799bb3db8718f, type: 2}
+      propertyPath: m_TagString
+      value: StoneFloor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc3b78f000bc6c147bc799bb3db8718f, type: 2}
   m_IsPrefabAsset: 0
@@ -2565,6 +2585,10 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 4300000, guid: bcae6e444239b9a4581653b40fa3ab66, type: 3}
+    - target: {fileID: 120358, guid: fc3b78f000bc6c147bc799bb3db8718f, type: 2}
+      propertyPath: m_TagString
+      value: StoneFloor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc3b78f000bc6c147bc799bb3db8718f, type: 2}
   m_IsPrefabAsset: 0
@@ -2675,6 +2699,10 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 4300000, guid: bcae6e444239b9a4581653b40fa3ab66, type: 3}
+    - target: {fileID: 120358, guid: fc3b78f000bc6c147bc799bb3db8718f, type: 2}
+      propertyPath: m_TagString
+      value: StoneFloor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc3b78f000bc6c147bc799bb3db8718f, type: 2}
   m_IsPrefabAsset: 0
@@ -3564,6 +3592,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 42b64fdb315e3054ea757d8d1c4bcfa7, type: 2}
+    - target: {fileID: 120358, guid: fc3b78f000bc6c147bc799bb3db8718f, type: 2}
+      propertyPath: m_TagString
+      value: StoneFloor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc3b78f000bc6c147bc799bb3db8718f, type: 2}
   m_IsPrefabAsset: 0
@@ -8530,7 +8562,7 @@ GameObject:
   - component: {fileID: 273016916}
   m_Layer: 0
   m_Name: SM_Env_Trapdoor_01
-  m_TagString: Untagged
+  m_TagString: WoodFloor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18856,6 +18888,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 80
       objectReference: {fileID: 0}
+    - target: {fileID: 152604, guid: d3b7674afb9052743a95ff497d5d30b8, type: 2}
+      propertyPath: m_TagString
+      value: WoodFloor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3b7674afb9052743a95ff497d5d30b8, type: 2}
   m_IsPrefabAsset: 0
@@ -19449,6 +19485,10 @@ Prefab:
     - target: {fileID: 133364, guid: 168ddccbb881e4046864922da40b147c, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 133364, guid: 168ddccbb881e4046864922da40b147c, type: 2}
+      propertyPath: m_TagString
+      value: Carpet
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 168ddccbb881e4046864922da40b147c, type: 2}
@@ -20099,6 +20139,10 @@ Prefab:
     - target: {fileID: 439792, guid: 55e968f7ad48bbb4b850cbb5e3f4d016, type: 2}
       propertyPath: m_RootOrder
       value: 143
+      objectReference: {fileID: 0}
+    - target: {fileID: 141332, guid: 55e968f7ad48bbb4b850cbb5e3f4d016, type: 2}
+      propertyPath: m_TagString
+      value: StoneFloor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55e968f7ad48bbb4b850cbb5e3f4d016, type: 2}
@@ -26307,7 +26351,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: e54459f4d189e5b4e98a38f2e71ef796, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 1d35d338508a22c43881affc03905bdb, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.4
   m_Pitch: 1
@@ -26624,13 +26668,26 @@ MonoBehaviour:
     BobDuration: 0.2
     BobAmount: 0.1
   m_StepInterval: 5
-  m_FootstepSounds:
+  m_FootstepSoundsWood:
   - {fileID: 8300000, guid: 19a6ffdd64487f948939ed0d98c9a8a0, type: 3}
   - {fileID: 8300000, guid: 894caf6a5cf475f42b7ba5f14481e700, type: 3}
   - {fileID: 8300000, guid: be22b43acfafbb84fa6530149674c61b, type: 3}
   - {fileID: 8300000, guid: 209e90a24b735494f99a712707a871bb, type: 3}
+  m_FootstepSoundsStone:
+  - {fileID: 8300000, guid: 19a6ffdd64487f948939ed0d98c9a8a0, type: 3}
+  - {fileID: 8300000, guid: 894caf6a5cf475f42b7ba5f14481e700, type: 3}
+  - {fileID: 8300000, guid: be22b43acfafbb84fa6530149674c61b, type: 3}
+  - {fileID: 8300000, guid: 209e90a24b735494f99a712707a871bb, type: 3}
+  m_FootstepSoundsCarpet:
+  - {fileID: 8300000, guid: c8b7ac84a9ed3114dafd0892dff3a91c, type: 3}
+  - {fileID: 8300000, guid: 4545f52504444aa4ca8d682671a3d84e, type: 3}
+  - {fileID: 8300000, guid: 9b13ae91f0366cd4aac595a036d2a8ec, type: 3}
+  - {fileID: 8300000, guid: 1179f5c3b773b6641bae59df02d260d3, type: 3}
   m_JumpSound: {fileID: 8300000, guid: 5897aeed9b676024fbb8c694b421a861, type: 3}
   m_LandSound: {fileID: 8300000, guid: 3b09d59f4499d45428baa7a21e954296, type: 3}
+  OnWood: 0
+  OnStone: 0
+  OnCarpet: 0
 --- !u!143 &568341842
 CharacterController:
   m_ObjectHideFlags: 0
@@ -26987,6 +27044,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 42b64fdb315e3054ea757d8d1c4bcfa7, type: 2}
+    - target: {fileID: 120358, guid: fc3b78f000bc6c147bc799bb3db8718f, type: 2}
+      propertyPath: m_TagString
+      value: StoneFloor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc3b78f000bc6c147bc799bb3db8718f, type: 2}
   m_IsPrefabAsset: 0
@@ -27242,6 +27303,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 42b64fdb315e3054ea757d8d1c4bcfa7, type: 2}
+    - target: {fileID: 120358, guid: fc3b78f000bc6c147bc799bb3db8718f, type: 2}
+      propertyPath: m_TagString
+      value: StoneFloor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc3b78f000bc6c147bc799bb3db8718f, type: 2}
   m_IsPrefabAsset: 0
@@ -30061,6 +30126,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 42b64fdb315e3054ea757d8d1c4bcfa7, type: 2}
+    - target: {fileID: 120358, guid: fc3b78f000bc6c147bc799bb3db8718f, type: 2}
+      propertyPath: m_TagString
+      value: StoneFloor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc3b78f000bc6c147bc799bb3db8718f, type: 2}
   m_IsPrefabAsset: 0
@@ -30632,6 +30701,10 @@ Prefab:
     - target: {fileID: 480472, guid: c705305615206314cbc2b3e7ce2fe7c4, type: 2}
       propertyPath: m_RootOrder
       value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 105794, guid: c705305615206314cbc2b3e7ce2fe7c4, type: 2}
+      propertyPath: m_TagString
+      value: Carpet
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c705305615206314cbc2b3e7ce2fe7c4, type: 2}
@@ -31250,6 +31323,10 @@ Prefab:
     - target: {fileID: 491288, guid: 8af94885318d538418292732485a4bd3, type: 2}
       propertyPath: m_RootOrder
       value: 51
+      objectReference: {fileID: 0}
+    - target: {fileID: 148994, guid: 8af94885318d538418292732485a4bd3, type: 2}
+      propertyPath: m_TagString
+      value: Carpet
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8af94885318d538418292732485a4bd3, type: 2}
@@ -32091,6 +32168,10 @@ Prefab:
       propertyPath: m_Name
       value: SM_Env_Floor_35
       objectReference: {fileID: 0}
+    - target: {fileID: 158856, guid: c034a0679cf68ef4a94786f35f9d3f56, type: 2}
+      propertyPath: m_TagString
+      value: WoodFloor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c034a0679cf68ef4a94786f35f9d3f56, type: 2}
   m_IsPrefabAsset: 0
@@ -32192,6 +32273,10 @@ Prefab:
     - target: {fileID: 158856, guid: c034a0679cf68ef4a94786f35f9d3f56, type: 2}
       propertyPath: m_Name
       value: SM_Env_Floor_33
+      objectReference: {fileID: 0}
+    - target: {fileID: 158856, guid: c034a0679cf68ef4a94786f35f9d3f56, type: 2}
+      propertyPath: m_TagString
+      value: WoodFloor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c034a0679cf68ef4a94786f35f9d3f56, type: 2}
@@ -38635,6 +38720,10 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 125082, guid: e07302db7bae9b54fbc70246dee27f8a, type: 2}
+      propertyPath: m_TagString
+      value: Carpet
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e07302db7bae9b54fbc70246dee27f8a, type: 2}
   m_IsPrefabAsset: 0
@@ -38694,6 +38783,10 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 4300000, guid: bcae6e444239b9a4581653b40fa3ab66, type: 3}
+    - target: {fileID: 120358, guid: fc3b78f000bc6c147bc799bb3db8718f, type: 2}
+      propertyPath: m_TagString
+      value: StoneFloor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc3b78f000bc6c147bc799bb3db8718f, type: 2}
   m_IsPrefabAsset: 0
@@ -44443,6 +44536,10 @@ Prefab:
       propertyPath: m_Name
       value: SM_Env_Floor_34
       objectReference: {fileID: 0}
+    - target: {fileID: 158856, guid: c034a0679cf68ef4a94786f35f9d3f56, type: 2}
+      propertyPath: m_TagString
+      value: WoodFloor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c034a0679cf68ef4a94786f35f9d3f56, type: 2}
   m_IsPrefabAsset: 0
@@ -49967,6 +50064,10 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 4300000, guid: bcae6e444239b9a4581653b40fa3ab66, type: 3}
+    - target: {fileID: 120358, guid: fc3b78f000bc6c147bc799bb3db8718f, type: 2}
+      propertyPath: m_TagString
+      value: StoneFloor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc3b78f000bc6c147bc799bb3db8718f, type: 2}
   m_IsPrefabAsset: 0
@@ -50128,6 +50229,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 42b64fdb315e3054ea757d8d1c4bcfa7, type: 2}
+    - target: {fileID: 120358, guid: fc3b78f000bc6c147bc799bb3db8718f, type: 2}
+      propertyPath: m_TagString
+      value: StoneFloor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc3b78f000bc6c147bc799bb3db8718f, type: 2}
   m_IsPrefabAsset: 0
@@ -55417,6 +55522,10 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 4300000, guid: bcae6e444239b9a4581653b40fa3ab66, type: 3}
+    - target: {fileID: 120358, guid: fc3b78f000bc6c147bc799bb3db8718f, type: 2}
+      propertyPath: m_TagString
+      value: StoneFloor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc3b78f000bc6c147bc799bb3db8718f, type: 2}
   m_IsPrefabAsset: 0
@@ -65692,6 +65801,10 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 4300000, guid: bcae6e444239b9a4581653b40fa3ab66, type: 3}
+    - target: {fileID: 120358, guid: fc3b78f000bc6c147bc799bb3db8718f, type: 2}
+      propertyPath: m_TagString
+      value: StoneFloor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc3b78f000bc6c147bc799bb3db8718f, type: 2}
   m_IsPrefabAsset: 0
@@ -66273,6 +66386,10 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 4300000, guid: bcae6e444239b9a4581653b40fa3ab66, type: 3}
+    - target: {fileID: 120358, guid: fc3b78f000bc6c147bc799bb3db8718f, type: 2}
+      propertyPath: m_TagString
+      value: StoneFloor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc3b78f000bc6c147bc799bb3db8718f, type: 2}
   m_IsPrefabAsset: 0
@@ -72373,6 +72490,10 @@ Prefab:
       propertyPath: m_Name
       value: SM_Env_Floor_Half_08
       objectReference: {fileID: 0}
+    - target: {fileID: 152604, guid: d3b7674afb9052743a95ff497d5d30b8, type: 2}
+      propertyPath: m_TagString
+      value: WoodFloor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3b7674afb9052743a95ff497d5d30b8, type: 2}
   m_IsPrefabAsset: 0
@@ -72736,6 +72857,25 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5.000001, y: 5, z: 0}
   m_Center: {x: -2.5000005, y: 2.5, z: 0}
+--- !u!1 &1549499459 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 125082, guid: e07302db7bae9b54fbc70246dee27f8a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1094138988}
+--- !u!64 &1549499462
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1549499459}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 22a5bdb2827a09244b2ae90f88e18ce8, type: 3}
 --- !u!1 &1553873316 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 173616, guid: 6b63546f32bcb934b8f35f7abfa6c916,
@@ -73343,6 +73483,10 @@ Prefab:
       propertyPath: m_Name
       value: SM_Env_Floor_Half_07
       objectReference: {fileID: 0}
+    - target: {fileID: 152604, guid: d3b7674afb9052743a95ff497d5d30b8, type: 2}
+      propertyPath: m_TagString
+      value: WoodFloor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3b7674afb9052743a95ff497d5d30b8, type: 2}
   m_IsPrefabAsset: 0
@@ -73504,6 +73648,10 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 4300000, guid: bcae6e444239b9a4581653b40fa3ab66, type: 3}
+    - target: {fileID: 120358, guid: fc3b78f000bc6c147bc799bb3db8718f, type: 2}
+      propertyPath: m_TagString
+      value: StoneFloor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc3b78f000bc6c147bc799bb3db8718f, type: 2}
   m_IsPrefabAsset: 0
@@ -89242,6 +89390,10 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 4300000, guid: bcae6e444239b9a4581653b40fa3ab66, type: 3}
+    - target: {fileID: 120358, guid: fc3b78f000bc6c147bc799bb3db8718f, type: 2}
+      propertyPath: m_TagString
+      value: StoneFloor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc3b78f000bc6c147bc799bb3db8718f, type: 2}
   m_IsPrefabAsset: 0
@@ -89891,6 +90043,10 @@ Prefab:
     - target: {fileID: 158856, guid: c034a0679cf68ef4a94786f35f9d3f56, type: 2}
       propertyPath: m_Name
       value: SM_Env_Floor_32
+      objectReference: {fileID: 0}
+    - target: {fileID: 158856, guid: c034a0679cf68ef4a94786f35f9d3f56, type: 2}
+      propertyPath: m_TagString
+      value: WoodFloor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c034a0679cf68ef4a94786f35f9d3f56, type: 2}
@@ -90708,6 +90864,10 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 4300000, guid: bcae6e444239b9a4581653b40fa3ab66, type: 3}
+    - target: {fileID: 120358, guid: fc3b78f000bc6c147bc799bb3db8718f, type: 2}
+      propertyPath: m_TagString
+      value: StoneFloor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc3b78f000bc6c147bc799bb3db8718f, type: 2}
   m_IsPrefabAsset: 0
@@ -91181,6 +91341,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 42b64fdb315e3054ea757d8d1c4bcfa7, type: 2}
+    - target: {fileID: 120358, guid: fc3b78f000bc6c147bc799bb3db8718f, type: 2}
+      propertyPath: m_TagString
+      value: StoneFloor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc3b78f000bc6c147bc799bb3db8718f, type: 2}
   m_IsPrefabAsset: 0
