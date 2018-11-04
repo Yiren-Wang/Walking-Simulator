@@ -533,6 +533,7 @@
             </e>
           </e>
           <e p="Shaders" t="Include">
+            <e p="AnimBlend-Add.shader" t="Include" />
             <e p="FAE_Waterfall.shader" t="Include" />
             <e p="FAE_WaterfallFoam.shader" t="Include" />
             <e p="Transparent_Unlit_DissolveEdge.shader" t="Include" />
@@ -541,15 +542,21 @@
         <e p="Scripts" t="Include">
           <e p="BoatMoving.cs" t="Include" />
           <e p="DisplayUI.cs" t="Include" />
+          <e p="FadeCamera.cs" t="Include" />
+          <e p="GetUIText.cs" t="Include" />
           <e p="GhostsCreater.cs" t="Include" />
           <e p="GhostWalking.cs" t="Include" />
           <e p="LootAtCamera.cs" t="Include" />
+          <e p="NPC_Boatman.cs" t="Include" />
           <e p="NPC_OldWoman.cs" t="Include" />
           <e p="PaddlePosition.cs" t="Include" />
           <e p="PlayerInteraction.cs" t="Include" />
           <e p="PlayerManagement.cs" t="Include" />
+          <e p="RotateForever.cs" t="Include" />
+          <e p="ShowMushrooms.cs" t="Include" />
           <e p="TextDissolve.cs" t="Include" />
           <e p="TriggerText.cs" t="Include" />
+          <e p="UIDissolve.cs" t="Include" />
         </e>
         <e p="Standard Assets" t="Include">
           <e p="Characters" t="Include">

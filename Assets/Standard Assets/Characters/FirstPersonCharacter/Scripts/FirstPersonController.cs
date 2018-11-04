@@ -59,7 +59,10 @@ namespace UnityStandardAssets.Characters.FirstPerson
 			m_MouseLook.Init(transform , m_Camera.transform);
         }
 
-
+        public void SetHeadHob(bool isHeadBob)
+        {
+            m_UseHeadBob = isHeadBob;
+        }
         // Update is called once per frame
         private void Update()
         {

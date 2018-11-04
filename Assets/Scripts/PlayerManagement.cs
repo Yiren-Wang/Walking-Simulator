@@ -6,6 +6,11 @@ public class PlayerManagement : MonoBehaviour
 {
 	private float curMushroom;
 	public float MushroomNumGoal;
+	public bool isTalkToCharon = false;
+	public bool isShowedMushroom = false;
+	public bool isEnoughMushroom = false;
+	public bool isGetCoin = false;
+	public bool isMoveBoat = false;
 	//public GameObject curText;
 	// Use this for initialization
 	void Start ()
@@ -21,10 +26,10 @@ public class PlayerManagement : MonoBehaviour
 	public void AddMushroom()
 	{
 		curMushroom++;
-		Debug.Log("Number of mushrooms:" + curMushroom);
 		if (curMushroom >= MushroomNumGoal)
 		{
 			Debug.Log("You have enough mushrooms!");
+			isEnoughMushroom = true;
 		}
 	}
 }

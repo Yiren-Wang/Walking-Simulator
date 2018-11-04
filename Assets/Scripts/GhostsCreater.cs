@@ -4,13 +4,11 @@ using UnityEngine;
 
 public class GhostsCreater : MonoBehaviour
 {
-	public Transform[] startPoint;
 	public Transform[] destination;
-	public int ghostNum;
 	public float changeTime;
 	private float timeElapsed;
-
-	private GameObject[] ghosts;
+	private GameObject ghost;
+	public GameObject[] ghosts;
 	// Use this for initialization
 	void Awake()
 	{
@@ -18,29 +16,43 @@ public class GhostsCreater : MonoBehaviour
 	}
 	void Start ()
 	{
-		ghosts = new GameObject[ghostNum];
 		timeElapsed = 0;
-		for (int i = 0; i < ghostNum; i++)
-		{
-			GameObject ghost = Instantiate(Resources.Load("Prefabs/Ghost")) as GameObject;
-			int startPointNum = i%11;
-			ghost.transform.position = startPoint[startPointNum].position;
-			int destinationNum = 10 - i % 11;
-			ghost.GetComponent<GhostWalking>().destination = destination[destinationNum];
-			ghosts[i] = ghost;
-		}		
+//		ghosts = new GameObject[ghostNum];
+//		
+//		for (int i = 0; i < ghostNum; i++)
+//		{	
+//			if (i < 3)
+//			{
+//				ghost = Instantiate(Resources.Load("Prefabs/GhostKid")) as GameObject;
+//			}
+//			else if (i < 9)
+//			{
+//				ghost = Instantiate(Resources.Load("Prefabs/GhostWoman")) as GameObject;
+//			}
+//			else
+//			{
+//				ghost = Instantiate(Resources.Load("Prefabs/GhostMan")) as GameObject;
+//			}
+//			int startPointNum = i%11;
+//			ghost.transform.position = startPoint[0].position;
+//			
+//			int destinationNum = i % 13;
+//			ghost.GetComponent<GhostWalking>().destination = destination[0];
+//			ghosts[i] = ghost;
+//			print(ghosts[0].transform.position);
+//		}		
 	}
 	
 	// Update is called once per frame
-	void Update ()
+	void Update()
 	{
 		timeElapsed += Time.deltaTime;
 		if (timeElapsed > changeTime)
 		{
-			int randomNum = Random.Range(0, ghostNum);
-			int randomDestination = Random.Range(0, destination.Length-1);
+			int randomNum = Random.Range(0, ghosts.Length);
+			int randomDestination = Random.Range(0, destination.Length - 1);
 			ghosts[randomNum].GetComponent<GhostWalking>().destination = destination[randomDestination];
 			timeElapsed = 0;
 		}
-	}
+}
 }

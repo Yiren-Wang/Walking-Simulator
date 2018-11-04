@@ -17,7 +17,7 @@ public class TriggerText : MonoBehaviour
 	{
 		targetText.SetActive(false);
 		//playerManagement = GameObject.Find("FPSController/FirstPersonCharacter").gameObject.GetComponent<PlayerManagement>();
-		textDissolve = GameObject.Find("FPSController/FirstPersonCharacter").gameObject.GetComponent<TextDissolve>();
+		textDissolve = targetText.GetComponent<TextDissolve>();
 		dissolveParticles.Stop();
 	}
 	

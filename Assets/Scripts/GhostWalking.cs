@@ -6,8 +6,8 @@ using UnityEngine.AI;
 public class GhostWalking : MonoBehaviour
 {
 	private NavMeshAgent ghost;
-
 	public Transform destination;
+	public Animator ghostAnimator;
 	// Use this for initialization
 	void Start ()
 	{
@@ -18,10 +18,13 @@ public class GhostWalking : MonoBehaviour
 	void Update ()
 	{
 		ghost.SetDestination(destination.position);
-		/*if (Vector3.Distance(gameObject.transform.position, destination.position)<6f)
+		if (ghost.velocity.magnitude >0.1f)
 		{
-			Debug.Log("stopped");
-			Destroy(gameObject);
-		}*/
+			ghostAnimator.SetBool("isWalking", true);
+		}
+		else
+		{
+			ghostAnimator.SetBool("isWalking", false);
+		}
 	}
 }
