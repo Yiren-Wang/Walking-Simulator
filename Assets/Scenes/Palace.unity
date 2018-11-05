@@ -19809,6 +19809,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MushroomNumGoal: 1
+  isTalkToCharon: 0
+  isShowedMushroom: 0
+  isEnoughMushroom: 0
+  isGetCoin: 0
+  isMoveBoat: 0
 --- !u!114 &443314043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19838,6 +19843,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RayDistance: 5
   playerManagement: {fileID: 443314042}
+  blackImage: {fileID: 0}
+  startFadeOut: 0
+  startFadeIn: 0
+  fadeSpeed: 1.2
 --- !u!124 &443314045
 Behaviour:
   m_ObjectHideFlags: 0
@@ -26669,15 +26678,15 @@ MonoBehaviour:
     BobAmount: 0.1
   m_StepInterval: 5
   m_FootstepSoundsWood:
-  - {fileID: 8300000, guid: 19a6ffdd64487f948939ed0d98c9a8a0, type: 3}
-  - {fileID: 8300000, guid: 894caf6a5cf475f42b7ba5f14481e700, type: 3}
-  - {fileID: 8300000, guid: be22b43acfafbb84fa6530149674c61b, type: 3}
-  - {fileID: 8300000, guid: 209e90a24b735494f99a712707a871bb, type: 3}
+  - {fileID: 8300000, guid: 3bf7b433f6e959b4abacb966447eeca8, type: 3}
+  - {fileID: 8300000, guid: 62c6a84f3597a164f8e28cd24fec04c3, type: 3}
+  - {fileID: 8300000, guid: 6800e4d63d4115f469b24c853b586eb2, type: 3}
+  - {fileID: 8300000, guid: 08e13b464f0c1314da9a2c0528a0a760, type: 3}
   m_FootstepSoundsStone:
-  - {fileID: 8300000, guid: 19a6ffdd64487f948939ed0d98c9a8a0, type: 3}
-  - {fileID: 8300000, guid: 894caf6a5cf475f42b7ba5f14481e700, type: 3}
-  - {fileID: 8300000, guid: be22b43acfafbb84fa6530149674c61b, type: 3}
-  - {fileID: 8300000, guid: 209e90a24b735494f99a712707a871bb, type: 3}
+  - {fileID: 8300000, guid: 1155d89adb390cb45ba5d2f628c375cf, type: 3}
+  - {fileID: 8300000, guid: 4a24bba1cc04ef64880da6a0c852ce86, type: 3}
+  - {fileID: 8300000, guid: 4803631cc2feda24bae59bf317cea04c, type: 3}
+  - {fileID: 8300000, guid: 8267ba40b74cbf24a86fe7b95effca90, type: 3}
   m_FootstepSoundsCarpet:
   - {fileID: 8300000, guid: c8b7ac84a9ed3114dafd0892dff3a91c, type: 3}
   - {fileID: 8300000, guid: 4545f52504444aa4ca8d682671a3d84e, type: 3}
