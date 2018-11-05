@@ -11,6 +11,9 @@ TagManager:
   - StoneFloor
   - Boat
   - Put
+  - Flower
+  - Gate
+  - Dead
   layers:
   - Default
   - TransparentFX

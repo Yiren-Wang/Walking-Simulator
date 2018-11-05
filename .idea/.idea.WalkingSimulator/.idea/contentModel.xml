@@ -74,6 +74,7 @@
               <e p="MinimalistStandardMatV2.cs" t="Include" />
             </e>
             <e p="Shaders" t="Include">
+              <e p="Minimalist Standard RenderQueue.shader" t="Include" />
               <e p="Minimalist Standard.shader" t="Include" />
             </e>
           </e>
@@ -541,6 +542,7 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="BoatMoving.cs" t="Include" />
+          <e p="DeathEffect.cs" t="Include" />
           <e p="DisplayUI.cs" t="Include" />
           <e p="FadeCamera.cs" t="Include" />
           <e p="GetUIText.cs" t="Include" />
@@ -549,6 +551,7 @@
           <e p="LootAtCamera.cs" t="Include" />
           <e p="NPC_Boatman.cs" t="Include" />
           <e p="NPC_OldWoman.cs" t="Include" />
+          <e p="NPC_Shade.cs" t="Include" />
           <e p="PaddlePosition.cs" t="Include" />
           <e p="PlayerInteraction.cs" t="Include" />
           <e p="PlayerManagement.cs" t="Include" />

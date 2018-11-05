@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using UnityEngine.SceneManagement;
 using UnityStandardAssets.Characters.FirstPerson;
 
 public class BoatMoving : MonoBehaviour {
@@ -80,6 +81,11 @@ public class BoatMoving : MonoBehaviour {
 		{
 			RenderSettings.fogDensity += 0.00009f;
 			
+		}
+
+		if (Vector3.Distance(transform.position, waypoints[waypoints.Length - 1].position) < 0.2)
+		{
+			SceneManager.LoadScene(1);
 		}
 	}
 }

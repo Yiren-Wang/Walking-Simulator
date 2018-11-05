@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/the River Styx.unity
     guid: 788d4485c5d7f904cbd71dbdbf83b6f8
+  - enabled: 1
+    path: Assets/Scenes/Asphodel Fields.unity
+    guid: b6d6dcba1a76234469a14e34d455f54b
+  - enabled: 1
+    path: Assets/Scenes/Palace.unity
+    guid: 403f662aba21bac43a48345e6217960b
   m_configObjects: {}
