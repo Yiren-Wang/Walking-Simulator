@@ -56,7 +56,7 @@ Material:
     - _FoamScale: 20
     - _FoamSpeed: 0.3
     - _FoamSpread: 1
-    - _FresPower: 0
+    - _FresPower: 0.5
     - _HQFoam: 0
     - _Height: 0.38
     - _Height_: 3.1521108
@@ -69,7 +69,7 @@ Material:
     - _RHeight_: 1.6590058
     - _RSpeed: 1
     - _RSpeed_: 8.295029
-    - _Reflection: 0.228
+    - _Reflection: 1.619
     - _Refraction: 2
     - _Scale: 1
     - _Scale_: 8.295029
