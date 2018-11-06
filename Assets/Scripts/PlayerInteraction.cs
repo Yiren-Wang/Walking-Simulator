@@ -57,6 +57,8 @@ public class PlayerInteraction : MonoBehaviour
 					Destroy(hitObject.collider.gameObject);
 					if (hitObject.collider.gameObject.name.Contains("Mushroom"))
 					{
+						//hitObject.collider.gameObject.GetComponent<AudioSource>Play();
+						Debug.Log("Played audio");
 						playerManagement.AddMushroom();
 					}
 				}

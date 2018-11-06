@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Palace.unity
     guid: 403f662aba21bac43a48345e6217960b
+  - enabled: 1
+    path: Assets/Scenes/Title Screen.unity
+    guid: bd4b151d45f2541468023dcc5056ec54
   m_configObjects: {}

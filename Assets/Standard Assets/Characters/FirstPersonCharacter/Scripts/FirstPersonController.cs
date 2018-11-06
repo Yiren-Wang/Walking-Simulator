@@ -27,6 +27,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         [SerializeField] private AudioClip[] m_FootstepSoundsWood;    // an array of footstep sounds that will be randomly selected from.
         [SerializeField] private AudioClip[] m_FootstepSoundsStone;    // an array of footstep sounds that will be randomly selected from.
         [SerializeField] private AudioClip[] m_FootstepSoundsCarpet;    // an array of footstep sounds that will be randomly selected from.
+        [SerializeField] private AudioClip[] m_FootstepSoundsCavern;    // an array of footstep sounds that will be randomly selected from.
         [SerializeField] private AudioClip m_JumpSound;           // the sound played when character leaves the ground.
         [SerializeField] private AudioClip m_LandSound;           // the sound played when character touches back on ground.
 
@@ -173,6 +174,16 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
             // pick & play a random footstep sound from the array,
             // excluding sound at index 0
+
+            if (OnCavern == true)
+            {
+                int n = Random.Range(1, m_FootstepSoundsCavern.Length);
+                m_AudioSource.clip = m_FootstepSoundsCavern[n];
+                m_AudioSource.PlayOneShot(m_AudioSource.clip);
+                // move picked sound to index 0 so it's not picked next time
+                m_FootstepSoundsCavern[n] = m_FootstepSoundsCavern[0];
+                m_FootstepSoundsCavern[0] = m_AudioSource.clip;
+            }
             if (OnStone == true)
             {
                 int n = Random.Range(1, m_FootstepSoundsStone.Length);
@@ -270,26 +281,37 @@ namespace UnityStandardAssets.Characters.FirstPerson
         public bool OnWood;
         public bool OnStone;
         public bool OnCarpet;
+        public bool OnCavern;
 
         private void OnControllerColliderHit(ControllerColliderHit hit)
         {
+            if (hit.gameObject.tag == "CavernFloor")
+            {
+                OnCavern = true;
+                OnStone = false;
+                OnWood = false;
+                OnCarpet = false;
+            }
             if (hit.gameObject.tag == "StoneFloor")
             {
                 OnStone = true;
                 OnCarpet = false;
                 OnWood = false;
+                OnCavern = false;
             }
             if (hit.gameObject.tag == "WoodFloor")
             {
                 OnWood = true;
                 OnCarpet = false;
                 OnStone = false;
+                OnCavern = false;
             }
             if (hit.gameObject.tag == "Carpet")
             {
                 OnCarpet = true;
                 OnWood = false;
                 OnStone = false;
+                OnCavern = false;
 
             }
             Rigidbody body = hit.collider.attachedRigidbody;
