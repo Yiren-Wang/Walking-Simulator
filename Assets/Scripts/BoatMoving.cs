@@ -85,7 +85,7 @@ public class BoatMoving : MonoBehaviour {
 
 		if (Vector3.Distance(transform.position, waypoints[waypoints.Length - 1].position) < 0.2)
 		{
-			SceneManager.LoadScene(1);
+			SceneManager.LoadScene(2);
 		}
 	}
 }

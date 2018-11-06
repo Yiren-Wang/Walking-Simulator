@@ -184,7 +184,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 m_FootstepSoundsCavern[n] = m_FootstepSoundsCavern[0];
                 m_FootstepSoundsCavern[0] = m_AudioSource.clip;
             }
-            if (OnStone == true)
+            else if (OnStone == true)
             {
                 int n = Random.Range(1, m_FootstepSoundsStone.Length);
                 m_AudioSource.clip = m_FootstepSoundsStone[n];
@@ -193,8 +193,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 m_FootstepSoundsStone[n] = m_FootstepSoundsStone[0];
                 m_FootstepSoundsStone[0] = m_AudioSource.clip;
             }
-
-            if (OnWood == true)
+            else if (OnWood == true)
             {
                 int n = Random.Range(1, m_FootstepSoundsWood.Length);
                 m_AudioSource.clip = m_FootstepSoundsWood[n];
@@ -203,8 +202,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 m_FootstepSoundsWood[n] = m_FootstepSoundsWood[0];
                 m_FootstepSoundsWood[0] = m_AudioSource.clip;
             }
-
-            if (OnCarpet == true)
+            else if (OnCarpet == true)
             {
                 int n = Random.Range(1, m_FootstepSoundsCarpet.Length);
                 m_AudioSource.clip = m_FootstepSoundsCarpet[n];
@@ -212,6 +210,15 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 // move picked sound to index 0 so it's not picked next time
                 m_FootstepSoundsCarpet[n] = m_FootstepSoundsCarpet[0];
                 m_FootstepSoundsCarpet[0] = m_AudioSource.clip;
+            }
+            else
+            {
+                int n = Random.Range(1, m_FootstepSoundsCavern.Length);
+                m_AudioSource.clip = m_FootstepSoundsCavern[n];
+                m_AudioSource.PlayOneShot(m_AudioSource.clip);
+                // move picked sound to index 0 so it's not picked next time
+                m_FootstepSoundsCavern[n] = m_FootstepSoundsCavern[0];
+                m_FootstepSoundsCavern[0] = m_AudioSource.clip;
             }
         }
 
@@ -285,28 +292,28 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         private void OnControllerColliderHit(ControllerColliderHit hit)
         {
-            if (hit.gameObject.tag == "CavernFloor")
+            if (hit.gameObject.tag.Equals("CavernFloor"))
             {
                 OnCavern = true;
                 OnStone = false;
                 OnWood = false;
                 OnCarpet = false;
             }
-            if (hit.gameObject.tag == "StoneFloor")
+            if (hit.gameObject.tag.Equals("StoneFloor"))
             {
                 OnStone = true;
                 OnCarpet = false;
                 OnWood = false;
                 OnCavern = false;
             }
-            if (hit.gameObject.tag == "WoodFloor")
+            if (hit.gameObject.tag.Equals("WoodFloor"))
             {
                 OnWood = true;
                 OnCarpet = false;
                 OnStone = false;
                 OnCavern = false;
             }
-            if (hit.gameObject.tag == "Carpet")
+            if (hit.gameObject.tag.Equals("Carpet"))
             {
                 OnCarpet = true;
                 OnWood = false;

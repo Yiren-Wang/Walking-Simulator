@@ -22,6 +22,7 @@ public class PlayerInteraction : MonoBehaviour
 	private PostProcessingProfile postProcessingProfile;
 	public bool isDeathEffect;
 	public Transform deathCollider;
+	public GameObject girl;
 	// Use this for initialization
 	void Start ()
 	{
@@ -61,6 +62,14 @@ public class PlayerInteraction : MonoBehaviour
 						Debug.Log("Played audio");
 						playerManagement.AddMushroom();
 					}
+					if (hitObject.collider.gameObject.name.Contains("staff"))
+					{
+						playerManagement.isGetStick = true;
+					}
+					if (hitObject.collider.gameObject.name.Contains("Crown"))
+					{
+						playerManagement.isGetCrown = true;
+					}
 				}
 			}
 			if (hitObject.collider.gameObject.tag.Equals("NPC"))
@@ -87,6 +96,33 @@ public class PlayerInteraction : MonoBehaviour
 					{
 						hitObject.collider.gameObject.GetComponent<NPC_Shade>().TargetText.gameObject.SetActive(true);
 						hitObject.collider.gameObject.GetComponent<NPC_Shade>().OneSentenceAppear(0);
+					}
+					if (hitObject.collider.gameObject.name.Contains("King"))
+					{
+						playerManagement.isTalkingToK = true;
+						playerManagement.isTalkingToQ = false;
+						if (playerManagement.isGiveStick && playerManagement.isGiveCrown)
+						{
+							girl.SetActive(true);
+						}
+						hitObject.collider.gameObject.GetComponent<NPC_KingQueen>().SetTextActive();
+						hitObject.collider.gameObject.GetComponent<NPC_KingQueen>().OneSentenceAppear(0);
+					}
+					if (hitObject.collider.gameObject.name.Contains("Queen"))
+					{
+						if (playerManagement.isGiveStick && playerManagement.isGiveCrown)
+						{
+							girl.SetActive(true);
+						}
+						playerManagement.isTalkingToQ = true;
+						playerManagement.isTalkingToK = false;
+						hitObject.collider.gameObject.GetComponent<NPC_KingQueen>().SetTextActive();
+						hitObject.collider.gameObject.GetComponent<NPC_KingQueen>().OneSentenceAppear(0);
+					}
+					if (hitObject.collider.gameObject.name.Contains("Girl"))
+					{
+						hitObject.collider.gameObject.GetComponent<NPC_Girl>().TargetText.gameObject.SetActive(true);
+						hitObject.collider.gameObject.GetComponent<NPC_Girl>().OneSentenceAppear(0);
 					}
 				}
 			}
@@ -156,7 +192,7 @@ public class PlayerInteraction : MonoBehaviour
 		yield return new WaitForSeconds(3f);
 		blackImage.color = Color.black;
 		startFadeOut = false;
-		SceneManager.LoadScene(2);
+		SceneManager.LoadScene(3);
 	}
 	void FadeCamera()
 	{
